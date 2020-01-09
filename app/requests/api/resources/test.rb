@@ -5,7 +5,7 @@ module API
     class Test < AuthorizedCore
       resource :test do
         get do
-          binding.pry
+          'test'
         end
       end
     end
