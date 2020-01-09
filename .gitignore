@@ -12,6 +12,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+.env
 
 # Ignore uploaded files in development
 /storage/*
@@ -22,6 +23,9 @@
 
 /public/assets
 .byebug_history
+config/database.yml
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+.DS_Store
