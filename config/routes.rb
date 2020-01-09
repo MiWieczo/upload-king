@@ -2,5 +2,5 @@ Rails.application.routes.draw do
   devise_for :users
   mount API::Core => '/'
 
-  root to: 'application#root'
+  root to: 'home#index'
 end
