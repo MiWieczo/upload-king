@@ -1,7 +1,7 @@
 module API
-    class AuthorizedCore < Core
-        # before { authenticate_user! }
+  class AuthorizedCore < Core
+    # before { authenticate_user! }
 
-        mount Resources::Test
-    end
+    mount Resources::Test
   end
+end
