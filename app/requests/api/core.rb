@@ -3,7 +3,7 @@ require 'grape_logging'
 
 module API
   class Core < ::Grape::API
-    logger.formatter = Rails.env.test? ? ->(*) {} : GrapeLogging::Formatters::Json.new
+    logger.formatter = Rails.env.test? ? ->(*) {} : GrapeLogging::Formatters::Default.new
     use GrapeLogging::Middleware::RequestLogger, logger: logger
 
     prefix :api
