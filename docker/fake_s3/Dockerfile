@@ -6,8 +6,6 @@ ADD Gemfile /
 
 RUN bundle install
 
-# EXPOSE 4567
-
 WORKDIR /fakes3_root
 
 ENTRYPOINT ["bundle", "exec"]
