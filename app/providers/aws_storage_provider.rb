@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AwsStorageProvider
   def self.resolve
     client = Aws::S3::Client.new(
