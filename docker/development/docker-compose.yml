@@ -7,3 +7,9 @@ services:
     environment:
       - POSTGRES_DB=upload-king-dev
       - POSTGRES_USER=postgres
+
+  fake_s3:
+    build:
+      context: ../fake_s3
+    ports:
+      - "4567:4567"
